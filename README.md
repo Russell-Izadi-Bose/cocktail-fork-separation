@@ -101,6 +101,13 @@ python eval.py \
         [--gpu-device GPU_DEVICE] \
 ```
 
+```bash
+python eval.py \
+        --root-dir /ext/datasets/dnr_v2 \
+        --checkpoint /home/russell/src/cocktail-fork-separation/checkpoints/default_mrx_pre_trained_weights.pth \
+        --gpu-device 0
+```
+
 The following is the average SI-SDR (dB) of the DnR test set using the included pre-trained model, which was trained using the default configuration of `lightning_train.py`.
 
 |             | Speech | Music |  SFX |
